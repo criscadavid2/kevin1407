@@ -18,8 +18,12 @@
   </head>
 
   <body>
-  <p>Esta es la pagina de <%= yield(:p) %> </p>
+  <header class="navbar navbar-fixed-top navbar-inverse"></header>
+  	<div class="container">
+  	 <%= link_to "bienvenida", 'pagina_estatica_bienvenida_url', id: "logo" %>
 
+  <p>Esta es la pagina de <%= yield(:p) %> </p>
+	<%= link_to "Ayuda",   pagina_estatica_ayuda_url, class: "btn btn-danger" %>
     <%= yield %>
   </body>
 </html>

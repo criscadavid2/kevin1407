@@ -17,4 +17,9 @@ class PaginaEstaticaControllerTest < ActionDispatch::IntegrationTest
   	assert_response :success
   end
 
+  test "should get contacto" do
+    get pagina_estatica_contacto_url
+    assert_response :success
+  end
+
 end
